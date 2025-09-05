@@ -1,0 +1,19 @@
+{
+  "name": "front5-rgaa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NoahBoos/FRONT5-RGAA.git"
+  },
+  "author": "Noah Boos AKA Rift, Axel Baloh, Théo Cozic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoahBoos/FRONT5-RGAA/issues"
+  },
+  "homepage": "https://github.com/NoahBoos/FRONT5-RGAA#readme",
+  "description": "Projet universitaire dont le but est de produire un site accessible par rapport à la RGAA. Réalisé dans le cadre de la ressource FRONT5."
+}
