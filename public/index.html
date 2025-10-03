@@ -7,11 +7,95 @@
     <title>Accueil</title>
 </head>
 <body class="text-gray-800 bg-gray-100">
-  <header>
-    <nav>
+  <header class="bg-slate-800 text-white">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <h1 class="text-xl font-bold">Nom du Site</h1>
+            <nav aria-label="Navigation principale" class="flex space-x-4">
+                <button id="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
+                    class="px-4 py-2 bg-slate-700 rounded hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-500">
+                    Menu
+                </button>
+                <ul id="dropdown-menu" class="dropdown hidden absolute top-15 bg-white text-gray-800 border border-gray-300 shadow-md rounded-md"
+                    role="menu" aria-labelledby="menu-button">
+                    <li role="none">
+                        <a href="balto-slavic.html" role="menuitem"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues balto-slaves</a>
+                        <ul class="dropdown hidden absolute left-full top-0 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
+                            aria-labelledby="Sous menu des langues balto-slaves">
+                            <li role="none"><a href="balto-slavic.html#lituanien" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Lituanien</a></li>
+                            <li role="none"><a href="balto-slavic.html#letton" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Letton</a></li>
+                            <li role="none"><a href="balto-slavic.html#russe" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Russe</a></li>
+                            <li role="none"><a href="balto-slavic.html#polonais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Polonais</a></li>
+                            <li role="none"><a href="balto-slavic.html#ukrainien" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Ukrainien</a></li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a href="celtique.html" role="menuitem"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langue Celtique</a>
+                        <ul class="dropdown hidden absolute left-full top-10 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
+                            aria-labelledby="Sous menu des langues celtiques">
+                            <li role="none"><a href="celtique.html#gallois" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Gallois</a></li>
+                            <li role="none"><a href="celtique.html#irlandais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Irlandais</a></li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a href="germanique.html" role="menuitem"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langue
+                            Germanique</a>
+                        <ul class="dropdown hidden absolute left-full top-20 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
+                            aria-labelledby="Sous menu des langues germaniques">
+                            <li role="none"><a href="germanique.html#anglais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Anglais</a></li>
+                            <li role="none"><a href="germanique.html#allemand" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Allemand</a></li>
+                            <li role="none"><a href="germanique.html#neerlandais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Néerlandais</a></li>
+                            <li role="none"><a href="germanique.html#suedois" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Suédois</a></li>
+                            <li role="none"><a href="germanique.html#danois" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Danois</a></li>
+                            <li role="none"><a href="germanique.html#norvegien" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Norvégien</a></li>
+                        </ul>
+                    </li>
+                    <li role="none">
+                        <a href="page_langue_romane.html" role="menuitem"
+                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langue Romane</a>
+                          </a>
+                        <ul class="dropdown hidden absolute left-full top-30 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
+                            aria-labelledby="Sous menu des langues romanes">
+                            <li role="none"><a href="page_langue_romane.html#francais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le Français</a></li>
+                            <li role="none"><a href="page_langue_romane.html#espagnol" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Espagnol</a></li>
+                            <li role="none"><a href="page_langue_romane.html#italien" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Italien</a></li>
+                            <li role="none"><a href="page_langue_romane.html#portugais" role="menuitem"
+                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le Portugais</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <form role="search" aria-label="Recherche sur le site" class="flex items-center space-x-2">
+                <label for="search-bar" class="sr-only">Rechercher</label>
+                <input type="search" id="search-bar" name="search" placeholder="Rechercher..."
+                    class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    aria-required="true">
+                <button type="submit"
+                    class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    Rechercher
+                </button>
+            </form>
+        </div>
+    </header>
 
-    </nav>
-  </header>
 
   <main>
     <h1 class="text-3xl font-bold underline">
@@ -29,5 +113,6 @@
   <footer>
 
   </footer>
+  <script src="../src/js/header.js"></script>
 </body>
 </html>
