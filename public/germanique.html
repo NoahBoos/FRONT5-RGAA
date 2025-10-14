@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./app.css" rel="stylesheet">
       <script defer src="js/header.js"></script>
+      <script defer src="js/font-height.js"></script>
     <title>Nom du site | Langues germanique</title>
   </head>
   <body class="text-gray-800 bg-gray-100">
@@ -99,6 +100,14 @@
     </header>
 
     <main>
+  <div class="fixed top-8 right-4 z-50" aria-hidden="true">
+  <label for="font-size-select">Taille de police</label>
+  <select id="font-size-select" class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg shadow">
+    <option value="small" selected>Petit</option>
+    <option value="medium">Moyen</option>
+    <option value="large">Grand</option>
+  </select>
+</div>
       <section>
         <h1 class="text-4xl font-bold underline" tabindex="0">
           Langues germanique
@@ -110,7 +119,7 @@
           <p tabindex="0">
             Les langues germaniques sont une branche de la famille des langues indo-européennes. Elles descendent toutes du proto-germanique. L'étude de ces langues se nomme la germanistique. Elles furent d'abord parlées par les peuples germaniques, qui vivaient au voisinage des Baltes, des Celtes et des Italiques et entrèrent en contact avec l'Empire romain sur ses confins.
         </p>
-        <img class="h-10 w-10" src="./1500img-3.png" alt="Image explicative du dialecte germanique, montrant la branche vers les dialectes germaniques septentrionaux, langues sandinaves, puis des dialectes germaniques occidentaux, regroupant l'anglais, frison, neerlandais et l'allemand, et enfin les dialectes germaniques orientaux">
+        <img class="h-11 w-11 object-contain" src="./img/photo_germanique.png" alt="Image explicative du dialecte germanique, montrant la branche vers les dialectes germaniques septentrionaux, langues sandinaves, puis des dialectes germaniques occidentaux">
           <table></table>
         </article>
       </section>
@@ -192,7 +201,8 @@
                 Ici, vous retrouverez une vidéo expliquant l'histoire des langues germaniques
             </h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/q532fVJHHx8?si=mY1qjA200ss6jW3D" 
-        title="Vidéo YouTube explicative sur l'histoire des langues germaniques, 11min46" frameborder="0" 
+        title="Vidéo YouTube explicative sur l'histoire des langues germaniques, 11min46"
+        role="application" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
