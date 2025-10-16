@@ -7,6 +7,30 @@
     <title>FOOTER</title>
 </head>
 <body>
+    <h2>Contact</h2>
+    <form class="flex flex-col gap-2 p-3" novalidate>
+        <div class="flex flex-col">
+            <label for="email">Entrez votre email :</label>
+            <input id="email" class="border" name="email" type="email" placeholder="Email" autocomplete="email" required aria-describedby="email-error"/>
+            <span id="email-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="flex flex-col">
+            <label for="sujet">Sujet de votre message</label>
+            <select class="border" name="sujet" id="sujet" required aria-describedby="sujet-error">
+                <option value="" disabled selected>--Choisissez une option--</option>
+                <option value="Généralités">Généralités</option>
+                <option value="Demande de contenus">Demande de contenus</option>
+                <option value="Réclamation">Réclamation en lien avec l'accessibilité ou la RGPD</option>
+            </select>
+            <span id="sujet-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+        </div>
+        <div class="flex flex-col">
+            <label for="message">Votre message</label>
+            <textarea id="message" class="border" name="message" placeholder="Votre message" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+        </div>
+        <button type="submit"><a href="../../public/envoi-formulaire.html">Envoyez votre message</a></button>
+    </form>
     <footer class="bg-slate-800 text-white">
         <div class="container mx-auto p-4 flex flex-col md:flex-row md:justify-between">
             <div>
