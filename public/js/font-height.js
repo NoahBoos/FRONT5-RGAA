@@ -1,5 +1,10 @@
 const select = document.getElementById('font-size-select');
+  const wrapper = document.getElementById('font-size-wrapper');
   const content = document.querySelector('main');
+
+  wrapper.setAttribute('aria-hidden', 'true'); 
+  select.setAttribute('role', 'presentation');  
+  select.setAttribute('tabindex', '-1');        
 
   select.addEventListener('change', () => {
     const size = select.value;
