@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./app.css" rel="stylesheet">
     <script defer src="js/header.js"></script>
+    <script defer src="js/font-height.js"></script>
     <title>Nom du site | Accueil</title>
 </head>
 <body class="text-gray-800 bg-gray-100">
@@ -100,6 +101,17 @@
 
 
     <main>
+        <div class="text-end top-8" id="font-size-wrapper">
+            <label for="font-size-select" class="block mb-2">Taille de police</label>
+            <select id="font-size-select" class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg shadow">
+                <option value="small" selected>Petit</option>
+                <option value="medium">Moyen</option>
+                <option value="large">Grand</option>
+            </select>
+            <p id="font-size-desc" class="sr-only">
+                Sélectionnez la taille du texte pour adapter l’affichage à votre confort de lecture.
+            </p>
+        </div>
         <h1>Envoi du formulaire</h1>
         <p>Votre message a bien été envoyé</p>
         <button><a href="index.html"></a></button>
