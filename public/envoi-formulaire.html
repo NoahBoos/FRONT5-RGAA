@@ -8,7 +8,7 @@
     <script defer src="js/font-height.js"></script>
     <title>Nom du site | Accueil</title>
 </head>
-<body class="text-gray-800 bg-gray-100">
+<body class="min-h-screen flex flex-col text-gray-800 bg-gray-100">
     <header class="bg-slate-800 text-white">
         <div class="container mx-auto flex items-center justify-between p-4">
             <a class="text-xl font-bold" href="index.html">
@@ -100,7 +100,7 @@
     </header>
 
 
-    <main>
+    <main class="flex-grow flex items-center justify-center">
         <div class="text-end top-8" id="font-size-wrapper">
             <label for="font-size-select" class="block mb-2">Taille de police</label>
             <select id="font-size-select" class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg shadow">
@@ -112,9 +112,11 @@
                 Sélectionnez la taille du texte pour adapter l’affichage à votre confort de lecture.
             </p>
         </div>
-        <h1>Envoi du formulaire</h1>
-        <p>Votre message a bien été envoyé</p>
-        <button><a href="index.html"></a></button>
+        <div class="flex flex-col items-center justify-center gap-2">
+            <h1 class="text-2xl">Envoi du formulaire</h1>
+            <p tabindex="0" class="text-xl">Votre message a bien été envoyé</p>
+            <button class="border bg-gray-600 text-white  rounded hover:bg-gray-700 p-1"><a href="index.html">Retour à l'accueil</a></button>
+        </div>
     </main>
 
     <footer class="bg-slate-800 text-white">
