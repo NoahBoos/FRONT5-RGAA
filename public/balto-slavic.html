@@ -1,333 +1,397 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./app.css" rel="stylesheet">
-    <script defer src="js/header.js"></script>
-    <script defer src="js/font-height.js"></script>
-    <title>Langues balto-slaves | Nom du site</title>
-  </head>
-  <body class="text-gray-800 bg-gray-100">
-    <header class="bg-slate-800 text-white">
-        <div class="container mx-auto flex items-center justify-between p-4">
-            <a class="text-xl font-bold" href="index.html">
-                Nom du Site
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./app.css" rel="stylesheet">
+  <script defer src="js/header.js"></script>
+  <script defer src="js/font-height.js"></script>
+  <title>Langues balto-slaves | Nom du site</title>
+</head>
+
+<body class="text-gray-800 bg-gray-100">
+  <header class="bg-slate-800 text-white">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <a class="text-xl font-bold" href="index.html">
+        Nom du Site
+      </a>
+      <nav aria-label="Navigation principale" class="flex space-x-4">
+        <button id="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
+          class="px-4 py-2 bg-slate-700 rounded hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-500">
+          Menu
+        </button>
+        <ul id="dropdown-menu"
+          class="dropdown hidden absolute top-15 bg-white text-gray-800 border border-gray-300 shadow-md rounded-md"
+          role="menu" aria-labelledby="menu-button">
+          <li role="none">
+            <a href="balto-slavic.html" role="menuitem"
+              class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues
+              balto-slaves</a>
+            <ul class="dropdown hidden absolute left-full top-0 bg-white border border-gray-300 shadow-md rounded-md"
+              role="menu" aria-labelledby="Sous menu des langues balto-slaves">
+              <li role="none"><a href="balto-slavic.html#lituanien" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Lituanien</a>
+              </li>
+              <li role="none"><a href="balto-slavic.html#letton" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Letton</a>
+              </li>
+              <li role="none"><a href="balto-slavic.html#russe" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Russe</a>
+              </li>
+              <li role="none"><a href="balto-slavic.html#polonais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Polonais</a>
+              </li>
+              <li role="none"><a href="balto-slavic.html#ukrainien" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Ukrainien</a>
+              </li>
+            </ul>
+          </li>
+          <li role="none">
+            <a href="celtique.html" role="menuitem"
+              class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues
+              celtiques</a>
+            <ul class="dropdown hidden absolute left-full top-10 bg-white border border-gray-300 shadow-md rounded-md"
+              role="menu" aria-labelledby="Sous menu des langues celtiques">
+              <li role="none"><a href="celtique.html#gallois" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Gallois</a>
+              </li>
+              <li role="none"><a href="celtique.html#irlandais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Irlandais</a>
+              </li>
+            </ul>
+          </li>
+          <li role="none">
+            <a href="germanique.html" role="menuitem"
+              class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues
+              germaniques</a>
+            <ul class="dropdown hidden absolute left-full top-20 bg-white border border-gray-300 shadow-md rounded-md"
+              role="menu" aria-labelledby="Sous menu des langues germaniques">
+              <li role="none"><a href="germanique.html#anglais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Anglais</a>
+              </li>
+              <li role="none"><a href="germanique.html#allemand" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Allemand</a>
+              </li>
+              <li role="none"><a href="germanique.html#neerlandais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Néerlandais</a>
+              </li>
+              <li role="none"><a href="germanique.html#suedois" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Suédois</a>
+              </li>
+              <li role="none"><a href="germanique.html#danois" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Danois</a>
+              </li>
+              <li role="none"><a href="germanique.html#norvegien" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Norvégien</a>
+              </li>
+            </ul>
+          </li>
+          <li role="none">
+            <a href="page_langue_romane.html" role="menuitem"
+              class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues
+              romanes</a>
             </a>
-            <nav aria-label="Navigation principale" class="flex space-x-4">
-                <button id="menu-button" aria-haspopup="true" aria-expanded="false" aria-controls="dropdown-menu"
-                    class="px-4 py-2 bg-slate-700 rounded hover:bg-slate-600 focus:outline-none focus:ring-2 focus:ring-slate-500">
-                    Menu
-                </button>
-                <ul id="dropdown-menu" class="dropdown hidden absolute top-15 bg-white text-gray-800 border border-gray-300 shadow-md rounded-md"
-                    role="menu" aria-labelledby="menu-button">
-                    <li role="none">
-                        <a href="balto-slavic.html" role="menuitem"
-                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues balto-slaves</a>
-                        <ul class="dropdown hidden absolute left-full top-0 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
-                            aria-labelledby="Sous menu des langues balto-slaves">
-                            <li role="none"><a href="balto-slavic.html#lituanien" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Lituanien</a></li>
-                            <li role="none"><a href="balto-slavic.html#letton" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Letton</a></li>
-                            <li role="none"><a href="balto-slavic.html#russe" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Russe</a></li>
-                            <li role="none"><a href="balto-slavic.html#polonais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Polonais</a></li>
-                            <li role="none"><a href="balto-slavic.html#ukrainien" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Ukrainien</a></li>
-                        </ul>
-                    </li>
-                    <li role="none">
-                        <a href="celtique.html" role="menuitem"
-                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues celtiques</a>
-                        <ul class="dropdown hidden absolute left-full top-10 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
-                            aria-labelledby="Sous menu des langues celtiques">
-                            <li role="none"><a href="celtique.html#gallois" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Gallois</a></li>
-                            <li role="none"><a href="celtique.html#irlandais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Irlandais</a></li>
-                        </ul>
-                    </li>
-                    <li role="none">
-                        <a href="germanique.html" role="menuitem"
-                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues germaniques</a>
-                        <ul class="dropdown hidden absolute left-full top-20 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
-                            aria-labelledby="Sous menu des langues germaniques">
-                            <li role="none"><a href="germanique.html#anglais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Anglais</a></li>
-                            <li role="none"><a href="germanique.html#allemand" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Allemand</a></li>
-                            <li role="none"><a href="germanique.html#neerlandais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Néerlandais</a></li>
-                            <li role="none"><a href="germanique.html#suedois" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Suédois</a></li>
-                            <li role="none"><a href="germanique.html#danois" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Danois</a></li>
-                            <li role="none"><a href="germanique.html#norvegien" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Norvégien</a></li>
-                        </ul>
-                    </li>
-                    <li role="none">
-                        <a href="page_langue_romane.html" role="menuitem"
-                            class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Langues romanes</a>
-                          </a>
-                        <ul class="dropdown hidden absolute left-full top-30 bg-white border border-gray-300 shadow-md rounded-md" role="menu"
-                            aria-labelledby="Sous menu des langues romanes">
-                            <li role="none"><a href="page_langue_romane.html#francais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le Français</a></li>
-                            <li role="none"><a href="page_langue_romane.html#espagnol" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Espagnol</a></li>
-                            <li role="none"><a href="page_langue_romane.html#italien" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Italien</a></li>
-                            <li role="none"><a href="page_langue_romane.html#portugais" role="menuitem"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le Portugais</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <form role="search" aria-label="Recherche sur le site" class="flex items-center space-x-2">
-                <label for="search-bar" class="sr-only">Rechercher</label>
-                <input type="search" id="search-bar" name="search" placeholder="Rechercher..."
-                    class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                    aria-required="true">
-                <button type="submit"
-                    class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                    Rechercher
-                </button>
-            </form>
-        </div>
-    </header>
-
-    <main>
-        <div class="text-end top-8" id="font-size-wrapper">
-            <label for="font-size-select" class="block mb-2">Taille de police</label>
-            <select id="font-size-select" class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg shadow">
-                <option value="small" selected>Petit</option>
-                <option value="medium">Moyen</option>
-                <option value="large">Grand</option>
-            </select>
-            <p id="font-size-desc" class="sr-only">
-                Sélectionnez la taille du texte pour adapter l’affichage à votre confort de lecture.
-            </p>
-        </div>
-      <section>
-        <h1 class="text-4xl font-bold underline" tabindex="0">
-          Langues balto-slaves
-        </h1>
-        <article>
-          <h2 class="text-2xl font-bold underline" tabindex="0">
-            Généralités
-          </h2>
-          <p tabindex="0">
-            Les langues balto-slaves sont une branche de la famille des langues indo-européennes. Elles regroupent les langues baltes et les langues slaves. Ce regroupement est largement admis, mais une minorité de linguistes considère toujours que les similitudes entre les langues de ces deux groupes seraient dues à des interférences linguistiques (par proximité géographique) au cours du Ier millénaire ap. J.-C., plutôt qu'à une origine commune, mais ils ne remettent pas en cause les appartenances des deux groupes aux langues indo-européennes. Certains linguistes, enfin, ont récemment suggéré que la branche balto-slave pouvait être séparée en trois groupes équidistants : les langues baltes de l'ouest (prussien), les langues baltes de l'est (lituanien et letton) et les langues slaves.
-          </p>
-          <table>
-            <caption tabindex="0">Présentation de certaines caractéristiques linguistiques des langues balto-slaves les plus parlées dans le monde.</caption>
-            <thead>
-              <tr>
-                <th scope="col" id="language" tabindex="0">Langue</th>
-                <th scope="col" id="alphabet" tabindex="0">Alphabet utilisé</th>
-                <th scope="col" id="speaker" tabindex="0">Nombre de locuteurs</th>
-                <th scope="col" id="grammatical_cases" tabindex="0">Cas grammaticaux</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row" headers="language" tabindex="0">Lituanien</th>
-                    <td headers="alphabet" tabindex="0">Latin</td>
-                    <td headers="speaker" tabindex="0">Environ 3 millions</td>
-                    <td headers="grammatical_cases" tabindex="0">7</td>
-                </tr>
-                <tr>
-                    <th scope="row" headers="language" tabindex="0">Letton</th>
-                    <td headers="alphabet" tabindex="0">Latin</td>
-                    <td headers="speaker" tabindex="0">Environ 2 millions</td>
-                    <td headers="grammatical_cases" tabindex="0">7</td>
-                </tr>
-                <tr>
-                    <th scope="row" headers="language" tabindex="0">Russe</th>
-                    <td headers="alphabet" tabindex="0">Cyrillique</td>
-                    <td headers="speaker" tabindex="0">Environ 150 millions</td>
-                    <td headers="grammatical_cases" tabindex="0">6</td>
-                </tr>
-                <tr>
-                    <th scope="row" headers="language" tabindex="0">Polonais</th>
-                    <td headers="alphabet" tabindex="0">Latin</td>
-                    <td headers="speaker" tabindex="0">Environ 40 millions</td>
-                    <td headers="grammatical_cases" tabindex="0">7</td>
-                </tr>
-                <tr>
-                    <th scope="row" headers="language" tabindex="0">Ukrainien</th>
-                    <td headers="alphabet" tabindex="0">Cyrillique</td>
-                    <td headers="speaker" tabindex="0">Environ 30 millions</td>
-                    <td headers="grammatical_cases" tabindex="0">7</td>
-                </tr>
-            </tbody>
-          </table>
-        </article>
-      </section>
-      <section>
-        <h2 class="text-3xl font-bold underline" tabindex="0">Quelques langues baltes...</h2>
-        <article>
-          <h3 class="text-2xl font-bold underline" id="lituanien" tabindex="0">Lituanien</h3>
-          <p tabindex="0">
-            Le lituanien (en lituanien : <span lang="lt">lietuvių kalba</span>) est une langue appartenant au groupe baltique oriental de la famille des langues indo-européennes, parlée par 2 800 000 personnes en 2012 en Lituanie et par environ 200 000 personnes dans le reste du monde, principalement en Russie, Lettonie et Pologne.
-          </p>
-          <img src="./img/lithuania-flag.jpg" alt="">
-        </article>
-        <article>
-          <h3 class="text-2xl font-bold underline" id="letton" tabindex="0">Letton</h3>
-          <p tabindex="0">
-            Le letton, ou lette, (en letton : <span lang="lv">latviešu (valoda)</span>) est une langue qui appartient au groupe balte oriental de la famille indo-européenne. Environ deux millions de personnes parlent letton.
-          </p>
-          <img src="./img/lettonie-riga.jpg" alt="">
-        </article>
-      </section>
-      <section>
-        <h2 class="text-3xl font-bold underline" tabindex="0">Quelques langues slaves...</h2>
-        <article>
-          <h3 class="text-2xl font-bold underline" id="russe" tabindex="0">Russe</h3>
-          <p tabindex="0">
-            Le russe (autonyme : <span lang="ru">русский язык</span>) est une langue appartenant au groupe de langues slaves orientales de la famille des langues indo-européennes, auquel appartiennent aussi l'ukrainien et le biélorusse. Il compte plus de 280 millions de locuteurs (167 millions comme langue maternelle et le reste comme langue seconde). Il constitue la langue officielle de la fédération de Russie et l'une des langues officielles des républiques de Biélorussie, du Kazakhstan et du Kirghizistan, langue de communication au sein de la Communauté des États indépendants (CEI), dominante dans certaines régions d'Ukraine (notamment le Sud et l'Est ukrainien ainsi que la capitale Kiev). Il est également une des langues officielles de l'ONU.
-          </p>
-          <img>
-        </article>
-        <article>
-          <h3 class="text-2xl font-bold underline" id="polonais" tabindex="0">Polonais</h3>
-          <p tabindex="0">
-            Le polonais (autonyme : <span lang="pl">język polski, polszczyzna</span> ou simplement <span lang="pl">polski</span> est une langue indo-européenne appartenant au groupe des langues slaves occidentales. Elle a le statut de langue officielle en Pologne où elle est parlée par environ 40 millions de personnes mais elle est également parlée par les minorités polonaises des pays voisins et un important nombre d'émigrés polonais vivant sur presque tous les continents. La langue s’écrit avec l’alphabet latin, certaines lettres étant surmontées de diacritiques.
-          </p>
-          <p tabindex="0">
-            Malgré la pression exercée par les administrations des occupants du territoire polonais, qui ont essayé de supprimer la langue et la culture polonaise, une littérature très riche s'est développée et aujourd'hui, le polonais est la seconde langue slave la plus parlée au monde après le russe.
-          </p>
-            <table aria-hidden="true">
-                <caption>Vocabulaire polonais de base</caption>
-                <thead>
-                    <tr>
-                        <th id="th-mot-trad" scope="col" colspan="2">Mot et traduction</th>
-                        <th id="th-cat" scope="col">Catégorie</th>
-                        <th id="th-niveau" scope="col">Niveau</th>
-                        <th id="th-com" scope="col">Commentaire</th>
-                    </tr>
-                    <tr>
-                        <th id="th-mot" scope="col">Mot (polonais)</th>
-                        <th id="th-trad" scope="col">Traduction (français)</th>
-                        <th colspan="3" scope="colgroup"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td headers="th-mot-trad th-mot"><span lang="pl">Dom</span></td>
-                        <td headers="th-mot-trad th-trad">Maison</td>
-                        <td headers="th-cat">Nom commun</td>
-                        <td headers="th-niveau">A1</td>
-                        <td headers="th-com">Mot de base</td>
-                    </tr>
-                    <tr>
-                        <td headers="th-mot-trad th-mot"><span lang="pl">Piękny</span></td>
-                        <td headers="th-mot-trad th-trad">Beau</td>
-                        <td headers="th-cat">Adjectif</td>
-                        <td headers="th-niveau">A2</td>
-                        <td headers="th-com">Forme accordée selon le genre</td>
-                    </tr>
-                    <tr>
-                        <td headers="th-mot-trad th-mot"><span lang="pl">Czytać</span></td>
-                        <td headers="th-mot-trad th-trad">Lire</td>
-                        <td headers="th-cat">Verbe</td>
-                        <td headers="th-niveau">A1</td>
-                        <td headers="th-com">Verbe régulier</td>
-                    </tr>
-                    <tr>
-                        <td headers="th-mot-trad th-mot"><span lang="pl">Szczęście</span></td>
-                        <td headers="th-mot-trad th-trad">Bonheur</td>
-                        <td headers="th-cat">Nom commun</td>
-                        <td headers="th-niveau">B1</td>
-                        <td headers="th-com">Contient des sons difficiles</td>
-                    </tr>
-                </tbody>
-            </table>
-            <a href="balto-slavic-polish-base-vocabulary-simplified-table.html" tabindex="0" class="sr-only">Accéder à une version simplifiée du tableau de vocabulaire polonais de base</a>
-        </article>
-        <article>
-          <h3 class="text-2xl font-bold underline" id="ukrainien" tabindex="0">Ukrainien</h3>
-          <p tabindex="0">
-            L'ukrainien (en ukrainien : <span lang="uk">українська мова</span>) est l'une des quatre langues appartenant au groupe oriental des langues slaves, qui forment elles-mêmes une famille des langues indo-européennes. Les autres langues slaves orientales sont le russe, le biélorusse et le rusyn (celui-ci étant parfois considéré comme un groupe de variétés régionales de l'ukrainien). L'ukrainien est la langue officielle de l'Ukraine.
-          </p>
-          <p tabindex="0">
-            Le nombre de locuteurs de l'ukrainien était estimé à 41 millions en 2007. Un certain nombre d'ukrainophones vivent aussi dans les pays de l'ex-Union soviétique (surtout en Russie), dans les autres territoires voisins de l'Ukraine, ainsi que dans la diaspora ukrainienne, notamment aux États-Unis et au Canada.
-          </p>
-          <img src="./img/Ukraine.png" alt="Une illustration de l'Ukraine sur une carte. Le pays est affiché comme se trouvant au Sud-Ouest de la Russie, au Sud-Est de la Biélorussie et la Pologne, au Nord-Est de la Roumanie et de la Moldavie. Enfin, il est au Nord et possède un accès direct à la mer noire.">
-        </article>
-      </section>
-    </main>
-    <aside></aside>
-
-    <div class="p-2">
-        <h2>Contact</h2>
-        <form id="contact-form" class="flex flex-col gap-4 p-3" novalidate>
-            <div class="flex flex-col gap-1">
-                <label for="email">Entrez votre email :</label>
-                <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required aria-describedby="email-error" class="border px-3 py-2 rounded" />
-                <!-- Barre de progression -->
-                <div class="h-1 bg-gray-300 rounded">
-                    <div id="email-progress" class="h-1 bg-blue-500 w-0 rounded transition-all duration-200"></div>
-                </div>
-                <!-- Compteur de caractères restants -->
-                <span id="email-remaining" class="text-sm text-gray-500" role="status" aria-live="polite"></span>
-                <span tabindex="0" id="email-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
-            </div>
-            <div class="flex flex-col gap-1">
-                <label for="sujet">Sujet de votre message</label>
-                <select id="sujet" name="sujet" required
-                    class="border px-3 py-2 rounded" aria-describedby="sujet-error">
-                    <option value="" disabled selected>--Choisissez une option--</option>
-                    <option value="Généralités">Généralités</option>
-                    <option value="Demande de contenus">Demande de contenus</option>
-                    <option value="Réclamation">Réclamation en lien avec l'accessibilité ou la RGPD</option>
-                </select>
-                <span tabindex="0" id="sujet-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
-            </div>
-            <div class="flex flex-col gap-1">
-                <label for="message">Votre message</label>
-                <textarea id="message" name="message" placeholder="Votre message" required aria-describedby="message-error" class="border px-3 py-2 rounded h-32 resize-none" aria-live="polite"></textarea>
-                <!-- Barre de progression -->
-                <div class="h-1 bg-gray-300 rounded">
-                    <div id="message-progress" class="h-1 bg-green-500 w-0 rounded transition-all duration-200"></div>
-                </div>
-                <!-- Compteur de caractères restants -->
-                <span id="message-remaining" class="text-sm text-gray-500" role="status" aria-live="polite"></span>
-                <span tabindex="0" id="message-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
-            </div>
-            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Envoyez votre message</button>
-            <p id="form-error-global" class="text-red-600 text-sm mt-2" role="alert" aria-live="assertive" tabindex="-1"></p>
-        </form>
+            <ul class="dropdown hidden absolute left-full top-30 bg-white border border-gray-300 shadow-md rounded-md"
+              role="menu" aria-labelledby="Sous menu des langues romanes">
+              <li role="none"><a href="page_langue_romane.html#francais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le
+                  Français</a></li>
+              <li role="none"><a href="page_langue_romane.html#espagnol" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Espagnol</a>
+              </li>
+              <li role="none"><a href="page_langue_romane.html#italien" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">L'Italien</a>
+              </li>
+              <li role="none"><a href="page_langue_romane.html#portugais" role="menuitem"
+                  class="block px-4 py-2 text-gray-800 hover:bg-blue-500 hover:text-white focus:bg-blue-500 focus:text-white rounded-md">Le
+                  Portugais</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <form role="search" aria-label="Recherche sur le site" class="flex items-center space-x-2">
+        <label for="search-bar" class="sr-only">Rechercher</label>
+        <input type="search" id="search-bar" name="search" placeholder="Rechercher..."
+          class="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+          aria-required="true">
+        <button type="submit"
+          class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+          Rechercher
+        </button>
+      </form>
     </div>
-    <footer class="bg-slate-800 text-white">
-        <div class="container mx-auto p-4 flex flex-col md:flex-row md:justify-between">
-            <div>
-                <h2 class="text-xl font-bold">Plan du site</h2>
-                <ul class="space-y-2 md:space-y-0 md:space-x-4 md:flex">
-                    <li><a href="./balto-slavic.html" class="hover:underline" aria-label="Lien vers la page ces langues balto-slaves">Langues balto-slaves</a></li>
-                    <li><a href="./celtique.html" class="hover:underline" aria-label="Lien vers la page des langues celtiques">Langues celtiques</a></li>
-                    <li><a href="./germanique.html" class="hover:underline" aria-label="Lien vers la page des langues germaniques">Langues germaniques</a></li>
-                    <li><a href="./page_langue_romane.html" class="hover:underline" aria-label="Lien vers la page des langues romanes">Langues romanes</a></li>
-                </ul>
-            </div>
-            <div class="mt-4 md:mt-0 flex items-center">
-                <ul class="space-y-2 md:space-y-0 md:space-x-4 md:flex">
-                    <li><a href="#" class="hover:underline" aria-label="Lien vers les mentions légales">Mentions légales</a></li>
-                    <li><a href="#" class="hover:underline" aria-label="Lien vers la page d'accessibilité">Accessibilité</a></li>
-                    <li><a href="#" class="hover:underline" aria-label="Lien vers la page des cookies et RGPD">Cookies et RGPD</a></li>
-                </ul>
-            </div>
+  </header>
+
+  <main>
+    <div class="text-end top-8" id="font-size-wrapper">
+      <label for="font-size-select" class="block mb-2">Taille de police</label>
+      <select id="font-size-select" class="bg-gray-200 hover:bg-gray-300 px-3 py-1 rounded-lg shadow">
+        <option value="small" selected>Petit</option>
+        <option value="medium">Moyen</option>
+        <option value="large">Grand</option>
+      </select>
+      <p id="font-size-desc" class="sr-only">
+        Sélectionnez la taille du texte pour adapter l’affichage à votre confort de lecture.
+      </p>
+    </div>
+    <section>
+      <h1 class="text-4xl font-bold underline" tabindex="0">
+        Langues balto-slaves
+      </h1>
+      <article>
+        <h2 class="text-2xl font-bold underline" tabindex="0">
+          Généralités
+        </h2>
+        <p tabindex="0">
+          Les langues balto-slaves sont une branche de la famille des langues indo-européennes. Elles regroupent les
+          langues baltes et les langues slaves. Ce regroupement est largement admis, mais une minorité de linguistes
+          considère toujours que les similitudes entre les langues de ces deux groupes seraient dues à des interférences
+          linguistiques (par proximité géographique) au cours du Ier millénaire ap. J.-C., plutôt qu'à une origine
+          commune, mais ils ne remettent pas en cause les appartenances des deux groupes aux langues indo-européennes.
+          Certains linguistes, enfin, ont récemment suggéré que la branche balto-slave pouvait être séparée en trois
+          groupes équidistants : les langues baltes de l'ouest (prussien), les langues baltes de l'est (lituanien et
+          letton) et les langues slaves.
+        </p>
+        <table>
+          <caption tabindex="0">Présentation de certaines caractéristiques linguistiques des langues balto-slaves les
+            plus parlées dans le monde.</caption>
+          <thead>
+            <tr>
+              <th scope="col" id="language" tabindex="0">Langue</th>
+              <th scope="col" id="alphabet" tabindex="0">Alphabet utilisé</th>
+              <th scope="col" id="speaker" tabindex="0">Nombre de locuteurs</th>
+              <th scope="col" id="grammatical_cases" tabindex="0">Cas grammaticaux</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" headers="language" tabindex="0">Lituanien</th>
+              <td headers="alphabet" tabindex="0">Latin</td>
+              <td headers="speaker" tabindex="0">Environ 3 millions</td>
+              <td headers="grammatical_cases" tabindex="0">7</td>
+            </tr>
+            <tr>
+              <th scope="row" headers="language" tabindex="0">Letton</th>
+              <td headers="alphabet" tabindex="0">Latin</td>
+              <td headers="speaker" tabindex="0">Environ 2 millions</td>
+              <td headers="grammatical_cases" tabindex="0">7</td>
+            </tr>
+            <tr>
+              <th scope="row" headers="language" tabindex="0">Russe</th>
+              <td headers="alphabet" tabindex="0">Cyrillique</td>
+              <td headers="speaker" tabindex="0">Environ 150 millions</td>
+              <td headers="grammatical_cases" tabindex="0">6</td>
+            </tr>
+            <tr>
+              <th scope="row" headers="language" tabindex="0">Polonais</th>
+              <td headers="alphabet" tabindex="0">Latin</td>
+              <td headers="speaker" tabindex="0">Environ 40 millions</td>
+              <td headers="grammatical_cases" tabindex="0">7</td>
+            </tr>
+            <tr>
+              <th scope="row" headers="language" tabindex="0">Ukrainien</th>
+              <td headers="alphabet" tabindex="0">Cyrillique</td>
+              <td headers="speaker" tabindex="0">Environ 30 millions</td>
+              <td headers="grammatical_cases" tabindex="0">7</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+    <section>
+      <h2 class="text-3xl font-bold underline" tabindex="0">Quelques langues baltes...</h2>
+      <article>
+        <h3 class="text-2xl font-bold underline" id="lituanien" tabindex="0">Lituanien</h3>
+        <p tabindex="0">
+          Le lituanien (en lituanien : <span lang="lt">lietuvių kalba</span>) est une langue appartenant au groupe
+          baltique oriental de la famille des langues indo-européennes, parlée par 2 800 000 personnes en 2012 en
+          Lituanie et par environ 200 000 personnes dans le reste du monde, principalement en Russie, Lettonie et
+          Pologne.
+        </p>
+        <img src="./img/lithuania-flag.jpg" alt="">
+      </article>
+      <article>
+        <h3 class="text-2xl font-bold underline" id="letton" tabindex="0">Letton</h3>
+        <p tabindex="0">
+          Le letton, ou lette, (en letton : <span lang="lv">latviešu (valoda)</span>) est une langue qui appartient au
+          groupe balte oriental de la famille indo-européenne. Environ deux millions de personnes parlent letton.
+        </p>
+        <img src="./img/lettonie-riga.jpg" alt="">
+      </article>
+    </section>
+    <section>
+      <h2 class="text-3xl font-bold underline" tabindex="0">Quelques langues slaves...</h2>
+      <article>
+        <h3 class="text-2xl font-bold underline" id="russe" tabindex="0">Russe</h3>
+        <p tabindex="0">
+          Le russe (autonyme : <span lang="ru">русский язык</span>) est une langue appartenant au groupe de langues
+          slaves orientales de la famille des langues indo-européennes, auquel appartiennent aussi l'ukrainien et le
+          biélorusse. Il compte plus de 280 millions de locuteurs (167 millions comme langue maternelle et le reste
+          comme langue seconde). Il constitue la langue officielle de la fédération de Russie et l'une des langues
+          officielles des républiques de Biélorussie, du Kazakhstan et du Kirghizistan, langue de communication au sein
+          de la Communauté des États indépendants (CEI), dominante dans certaines régions d'Ukraine (notamment le Sud et
+          l'Est ukrainien ainsi que la capitale Kiev). Il est également une des langues officielles de l'ONU.
+        </p>
+        <img>
+      </article>
+      <article>
+        <h3 class="text-2xl font-bold underline" id="polonais" tabindex="0">Polonais</h3>
+        <p tabindex="0">
+          Le polonais (autonyme : <span lang="pl">język polski, polszczyzna</span> ou simplement <span
+            lang="pl">polski</span> est une langue indo-européenne appartenant au groupe des langues slaves
+          occidentales. Elle a le statut de langue officielle en Pologne où elle est parlée par environ 40 millions de
+          personnes mais elle est également parlée par les minorités polonaises des pays voisins et un important nombre
+          d'émigrés polonais vivant sur presque tous les continents. La langue s’écrit avec l’alphabet latin, certaines
+          lettres étant surmontées de diacritiques.
+        </p>
+        <p tabindex="0">
+          Malgré la pression exercée par les administrations des occupants du territoire polonais, qui ont essayé de
+          supprimer la langue et la culture polonaise, une littérature très riche s'est développée et aujourd'hui, le
+          polonais est la seconde langue slave la plus parlée au monde après le russe.
+        </p>
+        <table aria-hidden="true">
+          <caption>Vocabulaire polonais de base</caption>
+          <thead>
+            <tr>
+              <th id="th-mot-trad" scope="col" colspan="2">Mot et traduction</th>
+              <th id="th-cat" scope="col">Catégorie</th>
+              <th id="th-niveau" scope="col">Niveau</th>
+              <th id="th-com" scope="col">Commentaire</th>
+            </tr>
+            <tr>
+              <th id="th-mot" scope="col">Mot (polonais)</th>
+              <th id="th-trad" scope="col">Traduction (français)</th>
+              <th colspan="3" scope="colgroup"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td headers="th-mot-trad th-mot"><span lang="pl">Dom</span></td>
+              <td headers="th-mot-trad th-trad">Maison</td>
+              <td headers="th-cat">Nom commun</td>
+              <td headers="th-niveau">A1</td>
+              <td headers="th-com">Mot de base</td>
+            </tr>
+            <tr>
+              <td headers="th-mot-trad th-mot"><span lang="pl">Piękny</span></td>
+              <td headers="th-mot-trad th-trad">Beau</td>
+              <td headers="th-cat">Adjectif</td>
+              <td headers="th-niveau">A2</td>
+              <td headers="th-com">Forme accordée selon le genre</td>
+            </tr>
+            <tr>
+              <td headers="th-mot-trad th-mot"><span lang="pl">Czytać</span></td>
+              <td headers="th-mot-trad th-trad">Lire</td>
+              <td headers="th-cat">Verbe</td>
+              <td headers="th-niveau">A1</td>
+              <td headers="th-com">Verbe régulier</td>
+            </tr>
+            <tr>
+              <td headers="th-mot-trad th-mot"><span lang="pl">Szczęście</span></td>
+              <td headers="th-mot-trad th-trad">Bonheur</td>
+              <td headers="th-cat">Nom commun</td>
+              <td headers="th-niveau">B1</td>
+              <td headers="th-com">Contient des sons difficiles</td>
+            </tr>
+          </tbody>
+        </table>
+        <a href="balto-slavic-polish-base-vocabulary-simplified-table.html" tabindex="0" class="sr-only">Accéder à une
+          version simplifiée du tableau de vocabulaire polonais de base</a>
+      </article>
+      <article>
+        <h3 class="text-2xl font-bold underline" id="ukrainien" tabindex="0">Ukrainien</h3>
+        <p tabindex="0">
+          L'ukrainien (en ukrainien : <span lang="uk">українська мова</span>) est l'une des quatre langues appartenant
+          au groupe oriental des langues slaves, qui forment elles-mêmes une famille des langues indo-européennes. Les
+          autres langues slaves orientales sont le russe, le biélorusse et le rusyn (celui-ci étant parfois considéré
+          comme un groupe de variétés régionales de l'ukrainien). L'ukrainien est la langue officielle de l'Ukraine.
+        </p>
+        <p tabindex="0">
+          Le nombre de locuteurs de l'ukrainien était estimé à 41 millions en 2007. Un certain nombre d'ukrainophones
+          vivent aussi dans les pays de l'ex-Union soviétique (surtout en Russie), dans les autres territoires voisins
+          de l'Ukraine, ainsi que dans la diaspora ukrainienne, notamment aux États-Unis et au Canada.
+        </p>
+        <img src="./img/Ukraine.png"
+          alt="Une illustration de l'Ukraine sur une carte. Le pays est affiché comme se trouvant au Sud-Ouest de la Russie, au Sud-Est de la Biélorussie et la Pologne, au Nord-Est de la Roumanie et de la Moldavie. Enfin, il est au Nord et possède un accès direct à la mer noire.">
+      </article>
+    </section>
+  </main>
+  <aside></aside>
+
+  <div class="p-2">
+    <h2>Contact</h2>
+    <form id="contact-form" class="flex flex-col gap-4 p-3" novalidate>
+      <div class="flex flex-col gap-1">
+        <label for="email">Entrez votre email :</label>
+        <input id="email" name="email" type="email" placeholder="Email" autocomplete="email" required
+          aria-describedby="email-error" class="border px-3 py-2 rounded" />
+        <!-- Barre de progression -->
+        <div class="h-1 bg-gray-300 rounded">
+          <div id="email-progress" class="h-1 bg-blue-500 w-0 rounded transition-all duration-200"></div>
         </div>
-        <div class="text-center text-sm mt-4 pb-4">
-            &copy; 2025 Nom du Site. Équipe Baloh, Boos, Cozic, Hannauer.
+        <!-- Compteur de caractères restants -->
+        <span id="email-remaining" class="text-sm text-gray-500" role="status" aria-live="polite"></span>
+        <span tabindex="0" id="email-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label for="sujet">Sujet de votre message</label>
+        <select id="sujet" name="sujet" required class="border px-3 py-2 rounded" aria-describedby="sujet-error">
+          <option value="" disabled selected>--Choisissez une option--</option>
+          <option value="Généralités">Généralités</option>
+          <option value="Demande de contenus">Demande de contenus</option>
+          <option value="Réclamation">Réclamation en lien avec l'accessibilité ou la RGPD</option>
+        </select>
+        <span tabindex="0" id="sujet-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+      </div>
+      <div class="flex flex-col gap-1">
+        <label for="message">Votre message</label>
+        <textarea id="message" name="message" placeholder="Votre message" required aria-describedby="message-error"
+          class="border px-3 py-2 rounded h-32 resize-none" aria-live="polite"></textarea>
+        <!-- Barre de progression -->
+        <div class="h-1 bg-gray-300 rounded">
+          <div id="message-progress" class="h-1 bg-green-500 w-0 rounded transition-all duration-200"></div>
         </div>
-    </footer>
-    <!-- Scripts à copier-coller dans les autres pages également-->
-    <script src="./js/character-counter.js"></script>
-    <script src="./js/validation.js"></script>
-  </body>
+        <!-- Compteur de caractères restants -->
+        <span id="message-remaining" class="text-sm text-gray-500" role="status" aria-live="polite"></span>
+        <span tabindex="0" id="message-error" class="text-red-600 text-sm" role="alert" aria-live="polite"></span>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Envoyez votre
+        message</button>
+      <p id="form-error-global" class="text-red-600 text-sm mt-2" role="alert" aria-live="assertive" tabindex="-1"></p>
+    </form>
+  </div>
+  <footer class="bg-slate-800 text-white">
+    <div class="container mx-auto p-4 flex flex-col md:flex-row md:justify-between">
+      <div>
+        <h2 class="text-xl font-bold">Plan du site</h2>
+        <ul class="space-y-2 md:space-y-0 md:space-x-4 md:flex">
+          <li><a href="./balto-slavic.html" class="hover:underline"
+              aria-label="Lien vers la page ces langues balto-slaves">Langues balto-slaves</a></li>
+          <li><a href="./celtique.html" class="hover:underline"
+              aria-label="Lien vers la page des langues celtiques">Langues celtiques</a></li>
+          <li><a href="./germanique.html" class="hover:underline"
+              aria-label="Lien vers la page des langues germaniques">Langues germaniques</a></li>
+          <li><a href="./page_langue_romane.html" class="hover:underline"
+              aria-label="Lien vers la page des langues romanes">Langues romanes</a></li>
+        </ul>
+      </div>
+      <div class="mt-4 md:mt-0 flex items-center">
+        <ul class="space-y-2 md:space-y-0 md:space-x-4 md:flex">
+          <li><a href="#" class="hover:underline" aria-label="Lien vers les mentions légales">Mentions légales</a></li>
+          <li><a href="#" class="hover:underline" aria-label="Lien vers la page d'accessibilité">Accessibilité</a></li>
+          <li><a href="#" class="hover:underline" aria-label="Lien vers la page des cookies et RGPD">Cookies et RGPD</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center text-sm mt-4 pb-4">
+      &copy; 2025 Nom du Site. Équipe Baloh, Boos, Cozic, Hannauer.
+    </div>
+  </footer>
+  <!-- Scripts à copier-coller dans les autres pages également-->
+  <script src="./js/character-counter.js"></script>
+  <script src="./js/validation.js"></script>
+</body>
+
 </html>
