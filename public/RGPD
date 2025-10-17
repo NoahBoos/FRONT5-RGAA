@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Politique de confidentialité (RGPD)</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1 class="text-3xl font-bold underline" tabindex="0">Politique de confidentialité (RGPD)</h1>
+
+            <article>
+                <p tabindex="0">Le site collecte certaines données personnelles via ses formulaires de contact et ses outils de mesure d'audience.</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-2xl font-bold underline" tabindex="0">Données collectées</h2>
+                <p tabindex="0">Adresse e-mail et message lorsque vous utilisez le formulaire de contact. Les données sont utilisées uniquement pour répondre à vos demandes.</p>
+            </article>
+
+            <article>
+                <h2 class="text-2xl font-bold underline" tabindex="0">Responsable du traitement</h2>
+                <p tabindex="0">BALOH Axel – baloh.axel@etu.unistra.fr</p>
+            </article>
+
+            <article>
+                <h2 class="text-2xl font-bold underline" tabindex="0">Durée de conservation</h2>
+                <p tabindex="0">Les données sont conservées pendant 1 an maximum, puis supprimées.</p>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h2 class="text-2xl font-bold underline" tabindex="0">Vos droits</h2>
+                <p tabindex="0">Conformément au Règlement Général sur la Protection des Données (RGPD), vous pouvez demander l'accès, la rectification ou la suppression de vos données personnelles à l'adresse : <a href="mailto:contact@tonsite.fr">contact@tonsite.fr</a></p>
+            </article>
+
+            <article>
+                <h2 class="text-2xl font-bold underline" tabindex="0">Recours</h2>
+                <p tabindex="0">Si vous estimez que vos droits ne sont pas respectés, vous pouvez contacter la CNIL : <a href="https://www.cnil.fr">www.cnil.fr</a>.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
